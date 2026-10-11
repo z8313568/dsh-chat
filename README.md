@@ -84,6 +84,17 @@
 
 ## 安装到 DSH
 
+从 GitHub 获取源码：
+
+```
+git clone https://github.com/z8313568/dsh-chat.git
+cd dsh-chat
+npm install
+npm run build     # 生成 lib/（Host ESM + Client CJS），构建产物不入库
+```
+
+再把它装进 DSH，把下面的 `/绝对路径/dsh-chat` 换成克隆下来的目录。
+
 已经装好了。重新安装或换 profile：
 
 ```
@@ -332,4 +343,4 @@ docs/             架构、规划覆盖对照、验证报告、前期调研
 
 ## 许可
 
-MIT。规划文档 §18.3 里提到的 `dsh-chat` 名称与包名冲突问题尚未核实，正式发布前需要确认。
+MIT，完整文本见 [LICENSE](./LICENSE)。规划文档 §18.3 里提到的 `dsh-chat` 名称与包名冲突问题尚未核实，正式发布前需要确认。
